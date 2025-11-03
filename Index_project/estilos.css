@@ -17,9 +17,10 @@ header{
 
 .logo{
     display: flex;
-    color: white;
+    color: #aec6cf;
     margin: 0;
     margin-left: 40px;
+    font-style: italic;
 }
 
 a{
