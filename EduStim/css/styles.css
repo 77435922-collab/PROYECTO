@@ -23,6 +23,7 @@ header{
     font-style: italic;
 }
 
+/*Menú*/
 a{
     text-decoration: none;
     color: black;
@@ -37,6 +38,7 @@ nav a:hover{
     color: #ff00ff;
 }
 
+/*Adaptable*/
 @media (max-width:700px){
     header{
         flex-direction: column;
@@ -45,22 +47,6 @@ nav a:hover{
     nav{
         padding: 10px 0px;
     }
-}
-
-.vermas{
-    display: inline-block;
-    background-color: #ffe4f2;
-    color: #e91e63;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: background-color 0.3s;    
-}
-
-.vermas:hover{
-    background-color: #ffb6c1;
 }
 
 /*Descripción*/
@@ -97,21 +83,21 @@ nav a:hover{
     color: #32a387;
 }
 
-.tarjeta button{
-    margin-top: 15px;
-    background-color: #e1fbf2;
-    border: none;
+/*Boton*/
+.vermas{
+    display: inline-block;
+    background-color: #ffe4f2;
+    color: #e91e63;
     padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #ff1493;
+    border-radius: 10px;
+    text-decoration: none;
     font-weight: bold;
-    align-self: center;
-    margin-top: auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;    
 }
 
-.tarjeta button:hover{
-    background-color: white;
+.vermas:hover{
+    background-color: #ffb6c1;
 }
 
 /*Pie de página*/
