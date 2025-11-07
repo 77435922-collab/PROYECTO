@@ -1,13 +1,15 @@
+/*Estilo general*/
 body{
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #fdfdfd;
+    background-color: #FFF8E7; /* Fondo crema claro */
 }
 
+/*Encabezado*/
 header{
     display: flex;
     min-width: 70px;
-    background-color: #ffd1dc;
+    background-color: #FFF2B2; /* Amarillo pastel */
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -17,6 +19,7 @@ header{
     width: 125px;
 }
 
+/*Menú*/
 a{
     text-decoration: none;
     color: black;
@@ -31,6 +34,7 @@ nav a:hover{
     color: #ff00ff;
 }
 
+/*Adaptable*/
 @media (max-width:700px){
     header{
         flex-direction: column;
@@ -41,8 +45,9 @@ nav a:hover{
     }
 }
 
+/*Secciones*/
 .seccion{
-    background-color: #c8f7c5;
+    background-color: #B9EAF5; /* Celeste bebé (igual que las tarjetas) */
     padding: 20px;
     margin: 40px auto;
     width: 70%;
@@ -53,10 +58,12 @@ nav a:hover{
 
 .seccion h2{
     text-decoration: underline;
+    color: #3399CC; /* Azul suave, igual que los títulos de tarjeta */
 }
 
+/*Pie de página*/
 footer{
-    background-color: #ffd1dc;
+    background-color: #FFF2B2; /* Amarillo pastel igual que el encabezado */
     color: gray;
     text-align: center;
     padding: 15px;

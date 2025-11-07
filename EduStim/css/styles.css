@@ -2,25 +2,21 @@
 body{
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #fdfdfd;
+    background-color: #FFF8E7;
 }
 
 /*Encabezado*/
 header{
     display: flex;
     min-width: 70px;
-    background-color: #ffd1dc;
+    background-color: #FFF2B2;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
 
-.logo{
-    display: flex;
-    color: #aec6cf;
-    margin: 0;
-    margin-left: 40px;
-    font-style: italic;
+#logo{
+    width: 125px;
 }
 
 /*Menú*/
@@ -68,7 +64,7 @@ nav a:hover{
 }
 
 .tarjeta{
-    background-color: #c2f8f8;
+    background-color: #B9EAF5;
     border-radius: 15px;
     box-shadow: 0 0 5px gray;
     width: 300px;
@@ -80,13 +76,13 @@ nav a:hover{
 }
 
 .tarjeta h2{
-    color: #32a387;
+    color: #3399CC;
 }
 
 /*Boton*/
 .vermas{
     display: inline-block;
-    background-color: #ffe4f2;
+    background-color: #FF7BAC;
     color: #e91e63;
     padding: 10px 20px;
     border-radius: 10px;
@@ -97,12 +93,12 @@ nav a:hover{
 }
 
 .vermas:hover{
-    background-color: #ffb6c1;
+    background-color: #FF9F80;
 }
 
 /*Pie de página*/
 footer{
-    background-color: #ffd1dc;
+    background-color: #FFF2B2;
     color: gray;
     text-align: center;
     padding: 15px;
