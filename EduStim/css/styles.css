@@ -2,7 +2,7 @@
 body{
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #F5F1E8;
+    background-color: #ffffff;
 }
 
 /*banner*/
@@ -113,7 +113,7 @@ nav a:hover{
 }
 
 .tarjeta{
-    background-color: #B9EAF5;
+    background-color: #d1e7ec;
     border-radius: 15px;
     box-shadow: 0 0 5px gray;
     width: 300px;
@@ -126,6 +126,12 @@ nav a:hover{
 
 .tarjeta h2{
     color: #3399CC;
+}
+
+.tarjeta img {
+    width: 200px;
+    display: block;       
+    margin: 0 auto 15px;
 }
 
 /*Boton*/

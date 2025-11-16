@@ -1,39 +1,62 @@
 //Psicologia
-let usuario = localStorage.getItem("usuario");
+// Detectar desde qué página llegó el usuario
+const params = new URLSearchParams(window.location.search);
+const destino = params.get("destino"); // psico o estim
 
 function login() {
-    const nombre = document.getElementById("nombre").value;
+    const nombre = document.getElementById("nombre").value.trim();
+    const apellido = document.getElementById("apellido").value.trim();
+    const dni = document.getElementById("dni").value.trim();
+    const edad = document.getElementById("edad").value.trim();
 
-    if (nombre.trim() === "") {
-        alert("Ingresa un nombre");
+    // Validaciones
+    if (!nombre || !apellido || !dni || !edad) {
+        alert("Por favor completa todos los campos.");
         return;
     }
 
-    localStorage.setItem("usuario", nombre);
-
-    window.location.href = "psicologia.html";
-}
-
-if (window.location.pathname.includes("psicologia.html")) {
-    document.getElementById("titulo").innerText = "Bienvenido, " + usuario;
-}
-
-//Estimulacion
-let usuarioE = localStorage.getItem("usuarioE");
-
-function login() {
-    const nombre = document.getElementById("nombre").value;
-
-    if (nombre.trim() === "") {
-        alert("Ingresa un nombre");
+    if (dni.length !== 8 || isNaN(dni)) {
+        alert("Ingresa un DNI válido de 8 dígitos.");
         return;
     }
 
-    localStorage.setItem("usuarioE", nombre);
+    if (isNaN(edad) || edad < 1 || edad > 120) {
+        alert("Ingresa una edad válida.");
+        return;
+    }
 
-    window.location.href = "Estimulacion.html";
+    // Guardar datos
+    const datos = { nombre, apellido, dni, edad };
+    localStorage.setItem("datosTutor", JSON.stringify(datos));
+
+    // Redirección
+    if (destino === "psico") {
+        window.location.href = "psicologia.html";
+    } else if (destino === "estim") {
+        window.location.href = "Estimulacion.html";
+    } else {
+        alert("No se encontró destino. Volviendo al inicio.");
+        window.location.href = "EduStim.html";
+    }
 }
 
-if (window.location.pathname.includes("Estimulacion.html")) {
-    document.getElementById("titulo").innerText = "Bienvenido, " + usuarioE;
-}
+/*Psicologia*/
+window.addEventListener("DOMContentLoaded", () => {
+    const datos = JSON.parse(localStorage.getItem("datosTutor"));
+    if (datos) {
+        document.getElementById("titulo").innerText =
+            "Bienvenido, " + datos.nombre + " " + datos.apellido;
+    }
+});
+
+
+/*Estimulacion*/
+window.addEventListener("DOMContentLoaded", () => {
+    const datos = JSON.parse(localStorage.getItem("datosTutor"));
+    if (datos) {
+        document.getElementById("titulo").innerText =
+            "Bienvenido, " + datos.nombre + " " + datos.apellido;
+    }
+});
+
+
