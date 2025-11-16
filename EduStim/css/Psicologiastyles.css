@@ -9,7 +9,7 @@ body{
 header{
     display: flex;
     min-width: 70px;
-    background-color: #FFF2B2; /* Amarillo pastel */
+    background-color: #bdf2f0;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -79,7 +79,7 @@ nav a:hover{
 
 /*Pie de página*/
 footer{
-    background-color: #FFF2B2; /* Amarillo pastel igual que el encabezado */
+    background-color: #bdf2f0;
     color: gray;
     text-align: center;
     padding: 15px;
