@@ -41,6 +41,21 @@ nav a:hover{
     }
 }
 
+/*Nombre de usuario*/
+.card{
+    background-color: #c8f7c5;
+    padding: 20px;
+    margin: 50px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h2{
+    text-decoration: none;
+}
+
 .seccion{
     background-color: #c8f7c5;
     padding: 20px;
@@ -52,7 +67,7 @@ nav a:hover{
 }
 
 .seccion h2{
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 footer{
