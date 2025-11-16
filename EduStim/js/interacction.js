@@ -1,5 +1,3 @@
-//Psicologia
-// Detectar desde qué página llegó el usuario
 const params = new URLSearchParams(window.location.search);
 const destino = params.get("destino"); // psico o estim
 
@@ -9,7 +7,6 @@ function login() {
     const dni = document.getElementById("dni").value.trim();
     const edad = document.getElementById("edad").value.trim();
 
-    // Validaciones
     if (!nombre || !apellido || !dni || !edad) {
         alert("Por favor completa todos los campos.");
         return;
@@ -25,11 +22,9 @@ function login() {
         return;
     }
 
-    // Guardar datos
     const datos = { nombre, apellido, dni, edad };
     localStorage.setItem("datosTutor", JSON.stringify(datos));
 
-    // Redirección
     if (destino === "psico") {
         window.location.href = "psicologia.html";
     } else if (destino === "estim") {
@@ -38,7 +33,7 @@ function login() {
         alert("No se encontró destino. Volviendo al inicio.");
         window.location.href = "EduStim.html";
     }
-}
+};
 
 /*Psicologia*/
 window.addEventListener("DOMContentLoaded", () => {
