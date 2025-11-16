@@ -122,6 +122,7 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta h2{
@@ -132,6 +133,11 @@ nav a:hover{
     width: 200px;
     display: block;       
     margin: 0 auto 15px;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 /*Boton*/
