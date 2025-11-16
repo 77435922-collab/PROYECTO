@@ -2,7 +2,7 @@
 body{
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #FFF8E7; /* Fondo crema claro */
+    background-color: #ffffff;
 }
 
 /*Encabezado*/
@@ -47,8 +47,8 @@ nav a:hover{
 
 /*Sección*/
 .seccion h2{
-    text-decoration: underline;
-    color: #3399CC; /* Azul suave */
+    text-decoration: none;
+    color: #3399CC;
 }
 
 .seccion{
