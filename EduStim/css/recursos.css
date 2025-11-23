@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    min-width: 70px;
+    background-color: #bdf2f0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo{
+    display: flex;
+    color: #49a0c0;
+    margin: 0;
+    margin-left: 40px;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 30px;
+}
+
+nav a:hover{
+    color: #ff00ff;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url("../img/recursos.avif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding-top: 120px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.hero p {
+    color: white;
+}
+
+.blog {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.blog h2 {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.post {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.post img {
+    width: 260px;
+    border-radius: 8px;
+}
+
+.post-info h3 {
+    margin: 0 0 5px 0;
+}
+
+.fecha {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.post-info a {
+    font-size: 14px;
+}
+
+hr {
+    margin: 40px 0;
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+}

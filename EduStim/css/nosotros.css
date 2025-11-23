@@ -1,8 +1,17 @@
+html {
+    height: 100%;
+}
+
 /*Estilo general*/
 body{
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #ffffff;
+    background-image: url("../img/nosotros.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;          
+    flex-direction: column; 
+    min-height: 100vh;      
 }
 
 /*Encabezado*/
@@ -45,6 +54,10 @@ nav a:hover{
     }
 }
 
+main {
+    flex: 1;
+}
+
 /*Sección*/
 .seccion h2{
     text-decoration: none;
@@ -55,7 +68,7 @@ nav a:hover{
     font-family: sans-serif;
     font-style: italic;
     text-align: justify;
-    background-color: #B9EAF5; /* Celeste pastel */
+    background-color: #B9EAF5;
     padding: 20px;
     margin: 40px auto;
     width: 70%;
@@ -69,5 +82,4 @@ footer{
     color: gray;
     text-align: center;
     padding: 15px;
-    margin-top: 40px;
 }
