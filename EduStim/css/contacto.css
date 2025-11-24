@@ -45,6 +45,13 @@ nav a:hover{
     color: #ff00ff;
 }
 
+.header.scrolled {
+    background-color: #bde6e6;
+    padding: 10px 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
 .hero {
     height: 100vh;
     background-image: url("../img/contacto.webp");
@@ -86,6 +93,42 @@ nav a:hover{
 .hero-content p {
     font-size: 16px;
     margin-bottom: 30px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-up {
+    width: 45px;
+    height: 45px;
+    background: #c3f3f3;
+    color: #000;
+    border-radius: 50%;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-up.show {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* formulario */
