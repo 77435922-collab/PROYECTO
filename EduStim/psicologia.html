@@ -30,10 +30,57 @@
         </p>
         <img src="img/psicologia.jpg">
     </section>
+
+        <!-- Descripción -->
+    <section class="intro">
+        <h2>Orientación Inicial en Psicología Infantil</h2>
+        <p>Responde estas preguntas para recibir una recomendación personalizada sobre la especialidad de psicología más adecuada.</p>
+    </section>
+
+    <section class="contenedor">
+        <h2>Cuestionario Inicial</h2>
+
+        <!-- P1 -->
+        <div class="pregunta">
+            <p>1. ¿Cómo se relaciona tu hijo con otros niños?</p>
+            <label><input type="radio" name="p1" value="infantil"> Se pelea o se aísla</label>
+            <label><input type="radio" name="p1" value="neuro"> Tiene dificultad para mantener la atención</label>
+            <label><input type="radio" name="p1" value="lenguaje"> No se comunica bien</label>
+        </div>
+
+        <!-- P2 -->
+        <div class="pregunta">
+            <p>2. ¿Tiene dificultades para seguir instrucciones?</p>
+            <label><input type="radio" name="p2" value="psicope"> Sí, seguido</label>
+            <label><input type="radio" name="p2" value="infantil"> A veces</label>
+        </div>
+
+        <!-- P3 -->
+        <div class="pregunta">
+            <p>3. ¿Presenta problemas en el habla o pronunciación?</p>
+            <label><input type="radio" name="p3" value="lenguaje"> Sí</label>
+            <label><input type="radio" name="p3" value="neuro"> No, pero tiene dificultad para recordar cosas</label>
+        </div>
+
+        <button id="consultar">Consultar Especialidad</button>
+
+    </section>
+
+    <!-- Resultado -->
+    <section id="resultado" class="resultado" style="display: none;">
+        <h2>Resultado de la Orientación</h2>
+        <p id="resultado-texto"></p>
+
+        <a href="#" class="btn" target="_blank">Agendar Cita</a>
+    </section>
+
+
     <footer>
         <p><h6>&copy; 2025 EduStim. Todos los derechos reservados</h6></p>
     </footer>    
 
+    <!-- Script -->
+    <script src="js/psicoTest.js"></script>
     <script src="js/interacction.js"></script>
 </body>
 </html>
