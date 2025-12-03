@@ -2,14 +2,14 @@
 body{
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #FFF8E7;
+    background-color: #fafaf7;
 }
 
 /*Encabezado*/
 header{
     display: flex;
     min-width: 70px;
-    background-color: #bdf2f0;
+    background-color: #4A4A4A;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -22,7 +22,7 @@ header{
 /*Menú*/
 a{
     text-decoration: none;
-    color: black;
+    color: #A7D8F0;
 }
 
 nav a{
@@ -31,7 +31,7 @@ nav a{
 }
 
 nav a:hover{
-    color: #ff00ff;
+    color: #5BA7D1;
 }
 
 /*Adaptable*/
@@ -79,7 +79,7 @@ nav a:hover{
 
 /*Pie de página*/
 footer{
-    background-color: #bdf2f0;
+    background-color: #4A4A4A;
     color: gray;
     text-align: center;
     padding: 15px;

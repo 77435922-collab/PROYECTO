@@ -19,25 +19,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #bdf2f0;
+    background-color: #4A4A4A;
     padding: 10px;
 }
 
-.logo {
-    color: #aec6cf;
-    margin-left: 40px;
-    font-style: italic;
+#logo{
+    width: 125px;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: #A7D8F0;
     font-weight: 600;
     padding-right: 30px;
 }
 
 nav a:hover {
-    color: #ff00ff;
+    color: #5BA7D1;
 }
 
 main {
@@ -96,7 +94,7 @@ button:hover {
 
 
 footer {
-    background-color: #bdf2f0;
+    background-color: #4A4A4A;
     color: gray;
     text-align: center;
     padding: 15px;

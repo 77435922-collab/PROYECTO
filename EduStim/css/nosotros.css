@@ -18,7 +18,7 @@ body{
 header{
     display: flex;
     min-width: 70px;
-    background-color: #bdf2f0;
+    background-color: #4A4A4A;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -31,7 +31,7 @@ header{
 /*Menú*/
 a{
     text-decoration: none;
-    color: black;
+    color: #A7D8F0;
 }
 
 nav a{
@@ -40,7 +40,7 @@ nav a{
 }
 
 nav a:hover{
-    color: #ff00ff;
+    color: #5BA7D1;
 }
 
 /*Adaptable*/
@@ -78,7 +78,7 @@ main {
 
 /*Pie de página*/
 footer{
-    background-color: #bdf2f0;
+    background-color: #4A4A4A;
     color: gray;
     text-align: center;
     padding: 15px;

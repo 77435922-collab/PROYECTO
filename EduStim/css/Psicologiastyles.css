@@ -5,7 +5,7 @@ html {
 body{
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #ffffff;
+    background-color: #FAFAF7;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,7 +19,7 @@ main {
 header{
     display: flex;
     min-width: 70px;
-    background-color: #bdf2f0;
+    background-color: #4A4A4A;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -32,7 +32,7 @@ header{
 /*Menú*/
 a{
     text-decoration: none;
-    color: black;
+    color: #A7D8F0;
 }
 
 nav a{
@@ -41,7 +41,7 @@ nav a{
 }
 
 nav a:hover{
-    color: #ff00ff;
+    color: #5BA7D1;
 }
 
 /*Adaptable*/
@@ -57,7 +57,7 @@ nav a:hover{
 
 /*Nombre de usuario*/
 .card{
-    background-color: #c8f7c5;
+    background-color: #D9C7F3;
     padding: 20px;
     margin: 50px auto;
     width: 50%;
@@ -83,7 +83,7 @@ nav a:hover{
 
 .seccion h2{
     text-decoration: none;
-    color: #3399CC;
+    color: #4A4A4A;
 }
 
 /*Subtitulo*/
@@ -177,7 +177,7 @@ nav a:hover{
 
 /*Pie de página*/
 footer{
-    background-color: #bdf2f0;
+    background-color: #4A4A4A;
     color: gray;
     text-align: center;
     padding: 15px;
