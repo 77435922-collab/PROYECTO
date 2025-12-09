@@ -44,12 +44,47 @@
             proceso de adquisición de distintas funciones cerebrales.
         </p>
         <img src="img/estimulacion.jpg">
-    </section>
+
+    <h2 id="titulo">Recomendador de Estimulación</h2>
+
+    <div class="formulario">
+        <label>Edad del niño</label>
+        <select id="edadNino">
+            <option value="">Seleccionar</option>
+            <option value="0-2">0 a 2 años</option>
+            <option value="2-4">2 a 4 años</option>
+            <option value="4-6">4 a 6 años</option>
+        </select>
+
+        <label>Área de interés</label>
+        <select id="area">
+            <option value="">Seleccionar</option>
+            <option value="motricidad">Motricidad</option>
+            <option value="lenguaje">Lenguaje</option>
+            <option value="cognitivo">Cognitivo</option>
+            <option value="socioemocional">Socioemocional</option>
+        </select>
+
+        <button id="consultar">Consultar</button>
+    </div>
+
+    <!-- Resultado -->
+    <div id="resultado" style="display:none; margin-top:20px;">
+        <h3>Recomendación:</h3>
+        <p id="textoResultado"></p>
+
+        <a id="whatsapp" href="#" target="_blank">
+            <button>Agendar por WhatsApp</button>
+        </a>
+    </div>
+
     <footer>
         <p><h6>&copy; 2025 EduStim. Todos los derechos reservados</h6></p>
     </footer>
 
     <script src="js/interacction.js"></script>
+    <script src="js/estimTest.js"></script>
+
 
 </body>
 </html>
