@@ -55,6 +55,26 @@
         <footer>
             <h6>&copy; 2025 EduStim. Todos los derechos reservados</h6>
         </footer>
+        <script type="module">
+    
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAlTDBCO55R18TEbRC347wTYjMNG8OeN_w",
+  authDomain: "proyecto-662b8.firebaseapp.com",
+  projectId: "proyecto-662b8",
+  storageBucket: "proyecto-662b8.firebasestorage.app",
+  messagingSenderId: "826510770740",
+  appId: "1:826510770740:web:befdd3620aebc7868c0061",
+  measurementId: "G-XB6ENVKR5J"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+console.log("Firebase conectado de forma correcta ...!!",app)
+    </script>
 
     </body>
 </html>
