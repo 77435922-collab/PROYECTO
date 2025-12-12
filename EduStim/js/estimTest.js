@@ -1,19 +1,17 @@
 document.getElementById("consultar").addEventListener("click", function () {
 
-    // 1. Guardamos lo que el usuario eligió
+    // guardado de datos
     let edad = document.getElementById("edadNino").value;
     let area = document.getElementById("area").value;
 
-    // 2. Validación sencilla
+    // validación
     if (edad === "" || area === "") {
         alert("Por favor selecciona la edad y el área de interés.");
         return;
     }
 
-    // 3. Variable donde guardaremos el texto final
     let texto = "";
 
-    // 4. Lógica según la combinación seleccionada
     if (edad === "0-2" && area === "motricidad") {
         texto = "En esta etapa es ideal trabajar control de cabeza, rodadas y gateo con juegos suaves.";
     }
@@ -53,12 +51,10 @@ document.getElementById("consultar").addEventListener("click", function () {
         texto = "Trabajo en equipo, resolver conflictos simples y expresar emociones.";
     }
 
-    // 5. Mostrar el resultado
     document.getElementById("textoResultado").innerText = texto;
     document.getElementById("resultado").style.display = "block";
 
-    // 6. WhatsApp (coloca aquí tu número)
-    let numero = "51987654321"; // <-- CAMBIAR AL TUYO
+    let numero = "51987654321";
 
     document.getElementById("whatsapp").href =
         "https://wa.me/" + numero +

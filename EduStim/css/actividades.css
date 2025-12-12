@@ -192,3 +192,12 @@ nav a:hover{
     color: #444;
     margin-top: 8px;
 }
+
+/*Pie de página*/
+footer{
+    background-color: #4A4A4A;
+    color: gray;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

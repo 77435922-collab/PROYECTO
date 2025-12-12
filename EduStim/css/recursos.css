@@ -151,3 +151,13 @@ hr {
     height: 1px;
     background-color: #ddd;
 }
+
+/*Pie de página*/
+footer{
+    background-color: #4A4A4A;
+    color: gray;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
